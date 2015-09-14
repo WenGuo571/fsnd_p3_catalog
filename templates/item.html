@@ -1,0 +1,13 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+<div class="col-sm-1"></div>
+<form class="form-horizontal well col-sm-10">
+	<h2>{{item.name}}</h2>
+	<p><strong>Description:</strong> {{item.description}}</p>
+	</br>
+	<a href="{{url_for('editItem', item_name=item.name)}}">Edit |</a>
+	<a href="{{url_for('deleteItem', item_name=item.name)}}"> Delete |</a>
+	<a href="{{url_for('showCatalog')}}"> Cancel</a>
+</form>
+{% endblock %}

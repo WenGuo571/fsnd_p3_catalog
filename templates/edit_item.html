@@ -1,0 +1,40 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+<div class="col-sm-1"></div>
+<form class="form-horizontal well col-sm-10" action="#" method="post">
+	<div class="control-group">
+		<label class="control-label" for="input01">Name</label>
+		<div class="controls">
+			<input type="text" class="form-control input-xlarge" name="name" value="{{item.name}}">
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">Description</label>
+		<textarea class="form-control input-xlarge" id="textarea" name="description" rows="3" >{{item.description}}</textarea>
+	</div>
+	<label class="control-label">Catagory</label>
+	<div class="input-group">
+		<div class="input-group-btn">
+        	<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+        	<span class="caret"></span>
+        	</button>
+        	<ul id="demolist" class="dropdown-menu">
+        		{% for catagory in catagories %}
+        		<li><a href="#">{{catagory.name}}</a></li>
+            	{% endfor %}
+        	</ul>
+    	</div>
+    	<input type="textbox" id="databox" class="form-control" name="catagory_name" value="{{item.catagory_name}}"></input>
+    </div>
+	<br/>
+	<button type="submit" class="btn btn-default" name="submit" value="submit">Submit</button>
+	<button type="submit" class="btn btn-default" name="submit" value="cancel">Cancel</button>
+</form>
+
+<script>
+$('#demolist li').on('click', function(){
+	$('#databox').val($(this).text());
+});
+</script>
+{% endblock %}

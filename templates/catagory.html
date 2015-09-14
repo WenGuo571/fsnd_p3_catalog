@@ -1,0 +1,31 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <p class="lead"><strong>Catagories</strong></p>
+            <div class="list-group">
+                {% for catagory in catagories %}
+                <a href="{{url_for('showItemList', catagory_name=catagory.name)}}" class="list-group-item">{{catagory.name}}</a>
+                {% endfor %}
+            </div>
+            <a href="{{url_for('newItem')}}">Create New Item</a>
+        </div>
+
+        <div class="col-md-9">
+            {% if items[0] %}
+            <p class="lead">{{catagory_name}}</p>
+            <div class="list-group">
+                {% for item in items %}
+                <a href="{{url_for('showItem', catagory_name=item.catagory_name, item_name=item.name)}}" class="list-group-item">{{item.name}}  ({{item.catagory_name}})</a>
+                {% endfor %}
+            </div>
+            {% else %}
+            <p class="lead">No Items In {{catagory_name}}</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
