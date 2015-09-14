@@ -8,23 +8,23 @@ Web application that provides a list of items within a variety of catagories as 
 
 ### What's included
 catalog/   
-|--- client_secrets.json
-|--- database_setup.json
-|--- demo_items.json
-|--- project.py
-|--- static/  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--- bg.jpg  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--- styles.css  
-|--- templates/    
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--- catagory.html  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--- catalog.html 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--- delete_item.html
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--- edit_item.html
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--- header.html
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--- item.html
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--- login.html
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--- main.html
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--- new_item.html
+|--- client_secrets.json          
+|--- database_setup.json           
+|--- demo_items.json           
+|--- project.py                
+|--- static/              
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--- bg.jpg            
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--- styles.css               
+|--- templates/             
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--- catagory.html          
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--- catalog.html         
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--- delete_item.html          
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--- edit_item.html          
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--- header.html            
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--- item.html             
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--- login.html           
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--- main.html              
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--- new_item.html               
 
 ### Quick start
 1. install vagrant and VM in your machine, intallation detail:
