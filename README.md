@@ -38,9 +38,10 @@ catalog/
 4. setup and run application within folder '/vagrant/catalog'
 5. set up database: python database_setup.py
 6. add data to database: python demo_items.py
-7. access and test application by visiting 'http://localhost:5000' locally
-8. run 'exit' to logout
-9. run 'vagrant halt' to shut down VM
+7. start server: python project.py
+8. access and test application by visiting 'http://localhost:5000' locally
+9. run 'exit' to logout
+10. run 'vagrant halt' to shut down VM
 
 ### Further Improvements
 1. additional API endpoints: RSS, Atom, XML
